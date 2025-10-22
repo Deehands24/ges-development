@@ -46,7 +46,7 @@ function PropertyCard({ name, niche, traffic, monetization, outcome }: PropertyC
             {monetization.map((method, i) => (
               <span
                 key={i}
-                className="text-xs px-2 py-1 rounded-lg bg-gray-100 text-gray-700"
+                className="text-xs px-2 py-1 rounded-lg bg-blue-300 text-gray-700"
               >
                 {method}
               </span>

@@ -37,8 +37,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent to-blue-700 flex items-center justify-center shadow-lg transition-transform group-hover:scale-105">
-              <span className="text-white font-bold text-xl">G</span>
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-accent to-blue-900 flex items-center justify-center shadow-lg transition-transform group-hover:scale-105">
+              <span className="text-black font-bold text-xl">G</span>
             </div>
             <div className="hidden sm:block">
               <div className="font-bold text-lg text-gray-900">GES Development</div>
@@ -72,7 +72,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 rounded-xl hover:bg-gray-100 transition-colors"
+            className="lg:hidden p-2 rounded-xl hover:bg-blue-400 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >

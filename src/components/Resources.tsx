@@ -8,34 +8,34 @@ import Button from './Button'
 
 const guides = [
   {
-    title: 'Domain Due Diligence Checklist',
-    description: 'How to vet domains for SEO history, backlink profile, and trademark issues before buying.',
+    title: 'Strategic Planning for Sustainable Growth',
+    description: 'Learn how to develop a strategic plan that drives sustainable business growth and positions your company for long-term success.',
     readTime: '8 min read',
-    slug: '/resources/domain-due-diligence', // Update with your actual URL
+    slug: '/articles/strategic-planning',
   },
   {
-    title: 'The 30-Day SEO Sprint',
-    description: 'Our exact framework for taking a new site from zero to indexed and ranking for long-tail keywords.',
-    readTime: '12 min read',
-    slug: '/resources/30-day-seo-sprint',
+    title: 'Achieving Operational Excellence',
+    description: 'Discover proven strategies to optimize your operations, reduce costs, and improve efficiency across your organization.',
+    readTime: '7 min read',
+    slug: '/articles/operational-excellence',
   },
   {
-    title: 'Affiliate Setup: CJ, ShareASale, Impact',
-    description: 'Step-by-step guide to joining networks, placing links, and tracking conversions properly.',
+    title: 'Financial Management Strategies',
+    description: 'Master the financial fundamentals that drive business growth, from cash flow management to strategic investment decisions.',
+    readTime: '9 min read',
+    slug: '/articles/financial-management',
+  },
+  {
+    title: 'Strategic Market Expansion',
+    description: 'Learn how to successfully expand into new markets, whether geographic territories, customer segments, or product categories.',
+    readTime: '8 min read',
+    slug: '/articles/market-expansion',
+  },
+  {
+    title: 'Digital Transformation Guide',
+    description: 'Navigate digital transformation successfully by aligning technology investments with business strategy to drive growth.',
     readTime: '10 min read',
-    slug: '/resources/affiliate-setup-guide',
-  },
-  {
-    title: 'Local Lead Routing Architecture',
-    description: 'Call tracking, form webhooks, and CRM integration for turning visitors into qualified leads.',
-    readTime: '15 min read',
-    slug: '/resources/lead-routing-architecture',
-  },
-  {
-    title: 'Content Operations Playbook',
-    description: 'Building a repeatable system for briefing, editing, and publishing SEO content at scale.',
-    readTime: '18 min read',
-    slug: '/resources/content-operations-playbook',
+    slug: '/articles/digital-transformation',
   },
 ]
 

@@ -17,7 +17,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           "disabled:opacity-50 disabled:pointer-events-none",
           "hover:scale-[1.02] active:scale-[0.98]",
           {
-            'bg-accent text-white shadow-lg shadow-accent/30 hover:bg-accent-hover': variant === 'primary',
+            'bg-accent text-blue shadow-lg shadow-accent/30 hover:bg-accent-hover': variant === 'primary',
             'glass text-gray-900 hover:shadow-xl': variant === 'secondary',
             'text-gray-700 hover:bg-gray-100': variant === 'ghost',
           },

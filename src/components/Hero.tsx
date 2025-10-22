@@ -96,7 +96,7 @@ export default function Hero() {
               {trustLogos.map((logo) => (
                 <div
                   key={logo}
-                  className="text-sm font-medium text-gray-400 hover:text-gray-600 transition-colors"
+                  className="text-sm font-medium text-blue-400 hover:text-gray-600 transition-colors"
                 >
                   {logo}
                 </div>
@@ -114,7 +114,7 @@ export default function Hero() {
             <AnimatedMetric label="6-Month Revenue Uplift" value={127} suffix="%" prefix="+" />
           </div>
           <div className="mt-6 pt-6 border-t border-gray-200 text-center">
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-blue-700">
               * Metrics represent portfolio averages. Individual property performance varies based on niche, competition, and operational inputs.
             </p>
           </div>
