@@ -11,26 +11,31 @@ const guides = [
     title: 'Domain Due Diligence Checklist',
     description: 'How to vet domains for SEO history, backlink profile, and trademark issues before buying.',
     readTime: '8 min read',
+    slug: '/resources/domain-due-diligence', // Update with your actual URL
   },
   {
     title: 'The 30-Day SEO Sprint',
     description: 'Our exact framework for taking a new site from zero to indexed and ranking for long-tail keywords.',
     readTime: '12 min read',
+    slug: '/resources/30-day-seo-sprint',
   },
   {
     title: 'Affiliate Setup: CJ, ShareASale, Impact',
     description: 'Step-by-step guide to joining networks, placing links, and tracking conversions properly.',
     readTime: '10 min read',
+    slug: '/resources/affiliate-setup-guide',
   },
   {
     title: 'Local Lead Routing Architecture',
     description: 'Call tracking, form webhooks, and CRM integration for turning visitors into qualified leads.',
     readTime: '15 min read',
+    slug: '/resources/lead-routing-architecture',
   },
   {
     title: 'Content Operations Playbook',
     description: 'Building a repeatable system for briefing, editing, and publishing SEO content at scale.',
     readTime: '18 min read',
+    slug: '/resources/content-operations-playbook',
   },
 ]
 
@@ -58,26 +63,32 @@ export default function Resources() {
 
           <div className="space-y-4">
             {guides.map((guide, index) => (
-              <GlassCard key={index} hover className="group">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
-                    <FileText className="w-6 h-6 text-accent" />
-                  </div>
-                  <div className="flex-grow">
-                    <h3 className="font-bold text-gray-900 mb-1 group-hover:text-accent transition-colors">
-                      {guide.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 mb-2">{guide.description}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-gray-500">{guide.readTime}</span>
-                      <span className="text-sm text-accent font-medium inline-flex items-center group-hover:gap-2 transition-all">
-                        Read now
-                        <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
-                      </span>
+              <a
+                key={index}
+                href={guide.slug}
+                className="block"
+              >
+                <GlassCard hover className="group">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                      <FileText className="w-6 h-6 text-accent" />
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="font-bold text-gray-900 mb-1 group-hover:text-accent transition-colors">
+                        {guide.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 mb-2">{guide.description}</p>
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs text-gray-500">{guide.readTime}</span>
+                        <span className="text-sm text-accent font-medium inline-flex items-center group-hover:gap-2 transition-all">
+                          Read now
+                          <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </GlassCard>
+                </GlassCard>
+              </a>
             ))}
           </div>
         </div>
