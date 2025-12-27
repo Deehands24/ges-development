@@ -8,9 +8,9 @@ import Link from 'next/link'
 import { ArrowLeft, Clock, Calendar, Tag } from 'lucide-react'
 
 interface ArticlePageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 // Define the valid article slugs
@@ -29,7 +29,20 @@ export async function generateStaticParams() {
   }))
 }
 
-async function getArticle(slug: string) {
+interface Article {
+  slug: string
+  contentHtml: string
+  title: string
+  excerpt: string
+  date: string
+  readTime: string
+  category: string
+  author: string
+  tags?: string[]
+  [key: string]: any
+}
+
+async function getArticle(slug: string): Promise<Article | null> {
   if (!validSlugs.includes(slug)) {
     return null
   }
@@ -54,11 +67,12 @@ async function getArticle(slug: string) {
     slug,
     contentHtml,
     ...data,
-  }
+  } as Article
 }
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
-  const article = await getArticle(params.slug)
+  const resolvedParams = await params
+  const article = await getArticle(resolvedParams.slug)
 
   if (!article) {
     notFound()
